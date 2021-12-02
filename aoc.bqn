@@ -1,5 +1,5 @@
 # 1
-GetInput ← •BQN¨•FLines∘"input1.txt"
+GetInput ← •BQN¨•FLines∘"input1"
 Inc ← +´·<´˘2↕⊢
 Sums ← +´˘3↕⊢
 
@@ -18,7 +18,7 @@ Process ← {
   ⟨"up",x⟩     : ⟨0,(•BQN x)×¯1⟩
 }
 
-×´+´Process¨Words¨•FLines "input2.txt"
+×´+´Process¨Words¨•FLines "input2"
 
 # star 2
 
@@ -27,4 +27,4 @@ ProcessWithAim ← {
   ⟨"down",x⟩   : ⟨0,0,•BQN x⟩ ;
   ⟨"up",x⟩     : ⟨0,0,(•BQN x)×¯1⟩
 }
-×´2↑{𝕩+𝕨+⟨0,2⊑𝕨×⊑𝕩,0⟩}´ProcessWithAim¨Words¨•FLines "input2.txt"
+×´2↑{𝕩+𝕨+⟨0,2⊑𝕨×⊑𝕩,0⟩}´ProcessWithAim¨Words¨•FLines "input2"
