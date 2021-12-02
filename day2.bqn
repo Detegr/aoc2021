@@ -1,15 +1,3 @@
-# 1
-GetInput ← •BQN¨•FLines∘"input1"
-Inc ← +´·<´˘2↕⊢
-Sums ← +´˘3↕⊢
-
-# star 1
-Inc GetInput @
-# star 2
-Inc Sums∘GetInput @
-
-# 2
-
 # star 1
 Words ← ' '⊸((⊢-˜+`×¬)∘=⊔⊢)
 Process ← {
@@ -21,7 +9,6 @@ Process ← {
 ×´+´Process¨Words¨•FLines "input2"
 
 # star 2
-
 ProcessWithAim ← {
   ⟨"forward",x⟩: ⟨•BQN x,0,0⟩ ;
   ⟨"down",x⟩   : ⟨0,0,•BQN x⟩ ;
