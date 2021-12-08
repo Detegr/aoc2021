@@ -1,5 +1,5 @@
-Split ← (⊢-˜+`×¬)∘=⊔⊢
-inp ← >(1⊸↓⌾(1⊸⊑))¨' 'Split⚇1'|' Split¨•FLines "input8"
+Split ← (¬-˜⊢×·+`»⊸>)∘≠⊔⊢
+inp ← >' 'Split⚇1'|' Split¨•FLines "input8"
 
 # star 1
 •Show +´2‿3‿4‿7∊˜∾≠⚇1 1⊏˘inp
