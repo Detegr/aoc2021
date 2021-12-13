@@ -1,4 +1,4 @@
-inp ← >1+-⟜'0'¨•FLines "input9"
+inp ← >1+-⟜'0'¨•FLines "inputs/input9"
 
 # star 1
 # Add filler elements on each side

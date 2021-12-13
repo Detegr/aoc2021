@@ -1,4 +1,4 @@
-input ← •FLines "input10"
+input ← •FLines "inputs/input10"
 parens ← "([{<)]}>"
 opening ← 4↑parens
 closing ← 4↓parens

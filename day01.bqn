@@ -1,4 +1,4 @@
-GetInput ← •BQN¨•FLines∘"input1"
+GetInput ← •BQN¨•FLines∘"inputs/input1"
 Inc ← +´·<´˘2↕⊢
 Sums ← +´˘3↕⊢
 

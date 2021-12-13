@@ -1,5 +1,5 @@
 Split ← (⊢-˜+`×¬)∘=⊔⊢
-data ← >•BQN⚇1','⊸Split⚇1 1‿0‿1⊸/¨' ' Split¨•Flines "input5"
+data ← >•BQN⚇1','⊸Split⚇1 1‿0‿1⊸/¨' ' Split¨•Flines "inputs/input5"
 Laminate ← {
   ⟨⟨x⟩, y⟩: <(x≍⌜y);
   ⟨y, ⟨x⟩⟩: <(y≍⌜x);

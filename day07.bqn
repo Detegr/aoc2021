@@ -1,4 +1,4 @@
-input ← •BQN∘{"⟨"∾𝕩∾"⟩"}∘•FChars "input7"
+input ← •BQN∘{"⟨"∾𝕩∾"⟩"}∘•FChars "inputs/input7"
 inputRange ← (⌊´↓·↕(1+⌈´∘⊢)) input
 # star 1
 ⌊´+´¨{𝕩⊸(|-)¨input}¨inputRange

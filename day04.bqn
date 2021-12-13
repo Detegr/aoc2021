@@ -3,7 +3,7 @@
 Split ← (⊢-˜+`×¬)∘=⊔⊢
 RemoveTrailing ← (∨`∧∨⟜«)∘≠/⊢
 
-data ← •FLines "input4"
+data ← •FLines "inputs/input4"
 numbers ← •BQN¨','Split⊑data
 # Convert tables from input data to 3xmxn matrix
 tables ← >>¨•BQN⚇1' '⊸Split∘(' '⊸RemoveTrailing)⚇1 1↓¨1↓((+`¬∘(0⊸≠(≠⊢)¨))⊔⊢) 1↓data

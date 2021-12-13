@@ -6,7 +6,7 @@ Process ← {
   ⟨"up",x⟩     : ⟨0,(•BQN x)×¯1⟩
 }
 
-×´+´Process¨Words¨•FLines "input2"
+×´+´Process¨Words¨•FLines "inputs/input2"
 
 # star 2
 ProcessWithAim ← {
@@ -14,4 +14,4 @@ ProcessWithAim ← {
   ⟨"down",x⟩   : ⟨0,0,•BQN x⟩ ;
   ⟨"up",x⟩     : ⟨0,0,(•BQN x)×¯1⟩
 }
-×´2↑{𝕩+𝕨+⟨0,2⊑𝕨×⊑𝕩,0⟩}´ProcessWithAim¨Words¨•FLines "input2"
+×´2↑{𝕩+𝕨+⟨0,2⊑𝕨×⊑𝕩,0⟩}´ProcessWithAim¨Words¨•FLines "inputs/input2"

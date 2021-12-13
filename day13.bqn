@@ -1,6 +1,6 @@
 # Preprocessing
 Split ← (¬-˜⊢×·+`»⊸>)∘≠⊔⊢
-input ← •FLines "input13"
+input ← •FLines "inputs/input13"
 ⟨points, folds⟩←(+`0⊸=≠¨input)⊔input
 points↩⌽¨{•BQN"⟨"∾𝕩∾"⟩"}¨points
 folds↩{(¯1⊑⊑𝕩)∾1⊑𝕩}¨'='Split¨1↓folds

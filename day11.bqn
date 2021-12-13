@@ -1,4 +1,4 @@
-inp ← >-⟜'0'¨•FLines "input11"
+inp ← >-⟜'0'¨•FLines "inputs/input11"
 Flash←{⍉(⊢+»+«)˘⍉(⊢+»+«)˘𝕩}
 
 # star 1

@@ -1,5 +1,5 @@
 Split ← (¬-˜⊢×·+`»⊸>)∘≠⊔⊢
-input←'-'Split¨•FLines "input12"
+input←'-'Split¨•FLines "inputs/input12"
 
 Big←⊑∊⟜('A'+↕26)
 names←⍷∾input
