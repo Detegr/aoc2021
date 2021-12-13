@@ -5,9 +5,8 @@ input ← •FLines "input13"
 points↩⌽¨{•BQN"⟨"∾𝕩∾"⟩"}¨points
 folds↩{(¯1⊑⊑𝕩)∾1⊑𝕩}¨'='Split¨1↓folds
 
-# Sloooooowly generate the grid
 grid←0⥊˜1+⌈´points
-grid↩+´{1⌾(𝕩⊸⊑) grid}¨points
+grid↩1¨⌾(points⊸⊑) grid
 
 Fold←{𝕊:
   axis←⊑𝕨
