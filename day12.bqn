@@ -1,5 +1,6 @@
 Split ← (¬-˜⊢×·+`»⊸>)∘≠⊔⊢
 input←'-'Split¨•FLines "input12"
+
 Big←⊑∊⟜('A'+↕26)
 names←⍷∾input
 revisitable←Big¨names
@@ -9,16 +10,20 @@ adj←names⊸⊐¨input
 start ← ⊑/"start"⊸≡⚇1 names
 end ← ⊑/"end"⊸≡⚇1 names
 Adjacent ← n⊸↑·/⁼∘∧⍷∘(⊢(≠/⊢)·∾adj/˜{⊑¨𝕩∊¨adj})
+small←¬revisitable ∨ (n↑/⁼start‿end)
 
-Search←{𝕊:
-  𝕨∨↩(n↑/⁼⋈𝕩)
+Search←{visited‿revisit_allowed𝕊𝕩:
+  visited∨↩n↑/⁼⋈𝕩
   𝕩≠end ?
-    next ← /(Adjacent 𝕩) ∧ (¬𝕨) ∨ revisitable
-    +´𝕨⊸Search¨next
+    a ← (Adjacent 𝕩)
+    next ← a ∧ (¬visited) ∨ revisitable
+    next_revisit ← a ∧ small ∧ visited ∧ revisit_allowed
+    +´(visited‿revisit_allowed⊸Search¨/next)∾(visited‿0⊸Search¨/next_revisit)
   ; 1
 }
 
 # star 1
-•Show (n↑0) Search start
+•Show (n↑0)‿0 Search start
+
 # star 2
-# TODO
+•Show (n↑0)‿1 Search start
