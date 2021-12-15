@@ -47,3 +47,6 @@ Step ← {𝕤
 }
 risk ← Step∘@•_while_(=⟜∞) ∞
 •Show risk
+
+# star 2
+# this is too slow for star 2. maybe another day.
